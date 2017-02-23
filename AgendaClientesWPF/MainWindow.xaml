@@ -5,11 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgendaClientesWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="650" Width="825">
-    <Canvas>
-        <Label Name="lbIntroduce" Content="Introduce texto" Canvas.Left="10" Canvas.Top="21.04"/>
-        <TextBox Name="tbNombre" HorizontalAlignment="Left" Canvas.Left="101.163" Canvas.Top="29.04" Width="100"/>
-        <Button  Content="Botón 13" HorizontalAlignment ="Left" Name="btn13" RenderTransformOrigin="0.5,0.5" Canvas.Top="57.01" Canvas.Left="10"/>
-        <Button  Content="Botón 14" HorizontalAlignment ="Left" Name="btn14" Background="#FF6C6161" Canvas.Left="67.023" Canvas.Top="57.01"/>
-    </Canvas>
+        Title="Agenda de empresas" Height="500" Width="500">
+    <DockPanel Margin="10">
+        <DockPanel DockPanel.Dock="Left" Margin="0,0,10,0">
+                <Label Name="lbEmpresas" DockPanel.Dock="Top" Content="Lista de empresas:" Width="160"/>
+                <ListBox Name="lboxEmpresas"/>
+            </DockPanel>
+        <GroupBox Header="Datos de la empresa:">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Name="lbCif" Content="CIF:" HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <Label Grid.Row="0" Grid.Column="1" Padding="10,0,0,0" Name="txCif" VerticalAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="0" Name="lbNombre" Content="Nombre:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Label Grid.Row="1" Grid.Column="1" Padding="10,0,0,0" Name="txNombre" VerticalAlignment="Center"/>
+                <Label Grid.Row="2" Grid.Column="0" Name="lbTelefono" Content="Teléfono:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Label Grid.Row="2" Grid.Column="1" Padding="10,0,0,0" Name="txTelefono" VerticalAlignment="Center"/>
+                <Label Grid.Row="3" Grid.Column="0" Name="lbContacto" Content="Contacto:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Label Grid.Row="3" Grid.Column="1" Padding="10,0,0,0" Name="txContacto" VerticalAlignment="Center"/>
+                <Label Grid.Row="4" Grid.Column="0" Name="lbEmail" Content="Email:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                <Label Grid.Row="4" Grid.Column="1" Padding="10,0,0,0" Name="txEmail" VerticalAlignment="Center"/>
+            </Grid>
+        </GroupBox>
+    </DockPanel>
+
 </Window>
