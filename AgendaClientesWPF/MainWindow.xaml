@@ -5,21 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgendaClientesWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <StackPanel>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
-    </StackPanel>
+        Title="MainWindow" Height="650" Width="825">
+    <Canvas>
+        <Label Name="lbIntroduce" Content="Introduce texto" Canvas.Left="10" Canvas.Top="21.04"/>
+        <TextBox Name="tbNombre" HorizontalAlignment="Left" Canvas.Left="101.163" Canvas.Top="29.04" Width="100"/>
+        <Button  Content="Botón 13" HorizontalAlignment ="Left" Name="btn13" RenderTransformOrigin="0.5,0.5" Canvas.Top="57.01" Canvas.Left="10"/>
+        <Button  Content="Botón 14" HorizontalAlignment ="Left" Name="btn14" Background="#FF6C6161" Canvas.Left="67.023" Canvas.Top="57.01"/>
+    </Canvas>
 </Window>
