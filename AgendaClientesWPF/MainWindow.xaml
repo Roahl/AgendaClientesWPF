@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgendaClientesWPF"
         mc:Ignorable="d"
-        Title="Agenda de empresas" Height="500" Width="500">
+        Title="Agenda de empresas" MinHeight="400" Height="500" MinWidth="400" Width="500">
     <DockPanel Margin="10">
         <DockPanel DockPanel.Dock="Left" Margin="0,0,10,0">
                 <Label Name="lbEmpresas" DockPanel.Dock="Top" Content="Lista de empresas:" Width="160"/>
