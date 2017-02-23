@@ -6,7 +6,20 @@
         xmlns:local="clr-namespace:AgendaClientesWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+        <Button Text="Button"HorizontalAlignment ="Left" Width="80" Height="40"/>
+    </StackPanel>
 </Window>
