@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AgendaClientesWPF"
         mc:Ignorable="d"
-        Title="Agenda de empresas" MinHeight="400" Height="500" MinWidth="400" Width="500">
+        SizeToContent="WidthAndHeight"
+        Title="Agenda de empresas">
     <DockPanel Margin="10">
         <DockPanel DockPanel.Dock="Left" Margin="0,0,10,0">
-                <Label Name="lbEmpresas" DockPanel.Dock="Top" Content="Lista de empresas:" Width="160"/>
-                <ListBox Name="lboxEmpresas"/>
-            </DockPanel>
+            <Label Name="lbEmpresas" DockPanel.Dock="Top" Content="Lista de empresas:" Width="160"/>
+            <ListBox Name="lboxEmpresas" SelectionChanged="objetoSeleccionado"/>
+        </DockPanel>
         <GroupBox Header="Datos de la empresa:">
-            <Grid>
+            <Grid >
                 <Grid.RowDefinitions>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition SharedSizeGroup="Button"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -34,8 +36,18 @@
                 <Label Grid.Row="3" Grid.Column="1" Padding="10,0,0,0" Name="txContacto" VerticalAlignment="Center"/>
                 <Label Grid.Row="4" Grid.Column="0" Name="lbEmail" Content="Email:" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                 <Label Grid.Row="4" Grid.Column="1" Padding="10,0,0,0" Name="txEmail" VerticalAlignment="Center"/>
+                <Grid Grid.IsSharedSizeScope="True" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition SharedSizeGroup="Buttons"/>
+                        <ColumnDefinition SharedSizeGroup="Buttons"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Row="0" Grid.Column="0" Name="btBorrar" Padding="3" Content="Borrar" Click="btBorrar_Click" />
+                    <Button Grid.Row="0" Grid.Column="1" Name="btCancelar" Padding="3" Margin="5,0,0,0" Content="Cancelar" Click="btCancelar_Click"/>
+                </Grid>
             </Grid>
         </GroupBox>
     </DockPanel>
-
 </Window>
